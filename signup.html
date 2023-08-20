@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn {
+      padding: 10px;
+      background-color: #FF9900;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #FFB84D;
+    }
+
+    .get-otp-button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .verify-otp-button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .terms {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .terms label {
+      display: inline;
+    }
+
+    .signup-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #FF9900;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .signin {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .signin a {
+      color: #0000FF;
+      text-decoration: underline;
+    }
+  </style>
+  <title>Sign-Up Page</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <div class="get-otp-button">
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number">
+          <button type="button" class="btn">Get OTP</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="otp">Verify OTP:</label>
+        <div class="verify-otp-button">
+          <input type="text" id="otp" name="otp" placeholder="Enter the OTP">
+          <button type="button" class="btn">Verify</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+      </div>
+      <div class="terms">
+        <label>
+          <input type="checkbox" name="terms" required> I accept the terms and conditions and privacy policy.
+        </label>
+      </div><br>
+      <button type="submit" class="signup-button">Sign Up</button>
+      <div class="signin">
+        <p>If you already have an account, <a href="#" class="signin-link">Sign In</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
